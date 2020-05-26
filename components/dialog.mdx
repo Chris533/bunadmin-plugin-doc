@@ -1,0 +1,44 @@
+import ConfirmDialog from "@/components/CommonDialog/ConfirmDialog"
+import { notice } from "@/core"
+
+# Dialog
+
+## ConfirmDialog
+
+<ConfirmDialog
+  doFunc={async () => {
+    await notice({
+      title: "Do Confirmed",
+      content: "This is a ConfirmDialog test"
+    })
+  }}
+  openModal={true}
+  title="Dialog Title"
+  msg="Content, Click `AGREE` will active a notice"
+/>
+
+``` tsx
+<ConfirmDialog
+  doFunc={async () => {
+    await notice({
+      title: "Do Confirmed",
+      content: "This is a ConfirmDialog test"
+    })
+  }}
+  openModal={true}
+  title="Dialog Title"
+  msg="Content, Click `AGREE` will active a notice"
+/>
+```
+
+## Props
+``` ts
+interface Interface {
+  openModal: number
+  title?: string | ReactElement
+  msg?: string | ReactElement
+  doFunc: () => void
+  disagree?: string | ReactElement
+  agree?: string | ReactElement
+}
+```

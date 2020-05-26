@@ -1,0 +1,103 @@
+import Cover from "@plugins/buncms-file/media/components/BunadminFile"
+import { notice } from "@/core"
+
+# Cover
+
+### Features
+
+* [x] Editable
+* [x] Previewer
+* [x] Droppable
+
+## Example
+<Cover
+  width={200}
+  viewMode={false}
+  prefix="https://www.gstatic.com/prettyearth/assets/full/"
+  file={{ id: 1, file_name: "12400.jpg" }}
+  onDrop={async () =>
+    await notice({
+      title: "Uploaded done",
+      content: "This is a Upload test"
+    })
+  }
+  onDel={async () =>
+    await notice({
+      title: "Deleted done",
+      content: "This is a Delete test"
+    })
+  }
+/>
+
+``` tsx
+import Cover from "@plugins/buncms-file/media/components/BunadminFile"
+...
+<Cover
+  width={200}
+  viewMode={false}
+  prefix="https://www.gstatic.com/prettyearth/assets/full/"
+  file={{ id: 1, file_name: "12400.jpg" }}
+  onDrop={async () =>
+    await notice({
+      title: "Uploaded done",
+      content: "This is a Upload test"
+    })
+  }
+  onDel={async () =>
+    await notice({
+      title: "Deleted done",
+      content: "This is a Delete test"
+    })
+  }
+/>
+```
+
+## Empty image
+``` jsx
+<Cover
+  width={135}
+  viewMode={true}
+  prefix={undefined}
+  file={undefined}
+/>
+```
+
+<Cover
+  width={135}
+  viewMode={true}
+  prefix={undefined}
+  file={undefined}
+/>
+
+## Props
+``` ts
+interface Props {
+  fileKey?: string | number
+  className?: string
+  ariaAttributes?: AriaAttributes
+  htmlAttributes?: HTMLAttributes<any>
+
+  t?: any
+  uploadText?: string
+  replaceText?: string
+
+  file?: {
+    id?: string
+    file_name?: string
+    media_name?: string
+  }
+  title?: string
+  width?: number
+  prefix?: string
+
+  onDrop?: ({ files, prefix, setImageUrl }: OnDropProps) => Promise<void>
+  onDel?: ({ file }: { file: any }) => Promise<void>
+
+  cardStyle?: object
+  mediaStyle?: object
+
+  viewMode?: boolean
+  multipleUpload?: boolean
+  hideUploadTip?: boolean
+}
+```

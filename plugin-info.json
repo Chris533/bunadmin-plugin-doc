@@ -1,27 +1,23 @@
 {
   "enable": true,
-  "private": true,
-  "custom-request-options": {
-    "url": "https://raw.githubusercontent.com/Chris533/bunadmin-doc/plugin/plugin-info.json",
-    "headers": {
-      "Authorization": "token git_token_DO_NOT_REPLACE_THIS",
-      "Warning!!!": "!!!DO NOT PUSH THE REAL TOKEN TO GIT, ONLY USE IT IN THE LOCAL FILE (`[bunadmin path]/plugins-info.json`)."
-    }
-  },
-  "name": "bunadmin-doc",
-  "version": "1.0.0-alpha.1",
-  "description": "bunadmin-doc Main Features",
+  "name": "bunadmin-plugin-doc",
+  "version": "1.0.0-alpha.2",
+  "description": "bunadmin documentation",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Chris533/bunadmin-doc.git"
+    "url": "https://github.com/bunred/bunadmin-plugin-doc.git"
   },
-  "plugin-id": "bunadmin-doc",
-  "plugin-author": "Chris533",
+  "keywords": ["bunadmin", "doc", "documentation"],
+  "homepage": "https://github.com/bunred/bunadmin-plugin-doc",
+  "plugin-id": "bunadmin-plugin-doc",
+  "plugin-navigation": "blog",
+  "plugin-author": "bunred",
   "plugin-folder": "bunadmin-doc",
-  "plugin-version": "0.0.2",
+  "plugin-version": "1.0.2",
   "plugin-bunadmin-version": "1.0.1",
   "plugin-download": {
     "type": "git",
-    "url": "https://github.com/Chris533/bunadmin-doc/archive/0.0.2.zip"
+    "url": "https://github.com/bunred/bunadmin-plugin-doc/archive/1.0.2.zip"
   }
 }
