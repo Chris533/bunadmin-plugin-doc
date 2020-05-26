@@ -1,22 +1,38 @@
 import { Type } from "@/core/menu/types"
+import components from "./components"
+import core from "@plugins/bunadmin-doc/menus/core"
 
-export default [
+const menus = [
   {
-    id: "comp",
-    name: "Get Started",
-    slug: "/doc/get-started",
+    id: "get-started",
+    name: "get-started",
+    label: "Get Started",
+    slug: "/doc/guide/get-started",
     parent: "",
     rank: "100",
     icon_type: "eva",
     icon: "play-circle-outline"
   },
   {
+    id: "core",
+    name: "core",
+    label: "Core",
+    parent: "",
+    rank: "100",
+    icon_type: "eva",
+    icon: "archive-outline"
+  },
+  {
     id: "comp",
-    name: "Components",
-    slug: "/doc/hello-world",
+    name: "components",
+    label: "Components",
     parent: "",
     rank: "100",
     icon_type: "eva",
     icon: "hard-drive-outline"
-  }
+  },
+  ...core,
+  ...components
 ] as Type[]
+
+export default menus
