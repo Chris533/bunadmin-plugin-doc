@@ -1,7 +1,7 @@
 {
   "enable": true,
   "name": "bunadmin-plugin-doc",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "bunadmin documentation",
   "license": "Apache-2.0",
   "repository": {
@@ -11,13 +11,13 @@
   "keywords": ["bunadmin", "doc", "documentation"],
   "homepage": "https://github.com/bunred/bunadmin-plugin-doc",
   "plugin-id": "bunadmin-plugin-doc",
-  "plugin-navigation": "blog",
+  "plugin-navigation": "documentation",
   "plugin-author": "bunred",
   "plugin-folder": "bunadmin-doc",
-  "plugin-version": "1.0.2",
+  "plugin-version": "1.0.3",
   "plugin-bunadmin-version": "1.0.1",
   "plugin-download": {
     "type": "git",
-    "url": "https://github.com/bunred/bunadmin-plugin-doc/archive/1.0.2.zip"
+    "url": "https://github.com/bunred/bunadmin-plugin-doc/archive/1.0.3.zip"
   }
 }
